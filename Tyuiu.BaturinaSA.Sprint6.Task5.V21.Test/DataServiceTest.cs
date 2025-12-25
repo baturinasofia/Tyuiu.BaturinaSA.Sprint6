@@ -7,7 +7,7 @@ namespace Tyuiu.BaturinaSA.Sprint6.Task5.V21.Test
         [TestMethod]
         public void TestMethod1()
         {
-            string path = @"C:\DataSprint6\InPutDataFileTask5V21.txt";
+            string path = @"C:\Users\Софья\source\repos\WinFormsAppChart\Tyuiu.BaturinaSA.Sprint6.Task5.V21\InPutDataFileTask5V21.txt";
             DataService ds = new DataService();
 
             double[] wait;
