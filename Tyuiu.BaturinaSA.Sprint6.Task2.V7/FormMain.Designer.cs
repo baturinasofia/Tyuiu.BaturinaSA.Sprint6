@@ -44,9 +44,9 @@
             groupBoxConclusion_BSA = new GroupBox();
             chartFunction_BSA = new System.Windows.Forms.DataVisualization.Charting.Chart();
             dataGridList_BSA = new DataGridView();
+            label5 = new Label();
             Column1 = new DataGridViewTextBoxColumn();
             Column2 = new DataGridViewTextBoxColumn();
-            label5 = new Label();
             groupBox1.SuspendLayout();
             groupBoxInput_BSA.SuspendLayout();
             groupBoxConclusion_BSA.SuspendLayout();
@@ -173,7 +173,7 @@
             chartFunction_BSA.ChartAreas.Add(chartArea1);
             legend1.Name = "Legend1";
             chartFunction_BSA.Legends.Add(legend1);
-            chartFunction_BSA.Location = new Point(187, 35);
+            chartFunction_BSA.Location = new Point(213, 35);
             chartFunction_BSA.Name = "chartFunction_BSA";
             series1.ChartArea = "ChartArea1";
             series1.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Spline;
@@ -181,7 +181,7 @@
             series1.Legend = "Legend1";
             series1.Name = "Series1";
             chartFunction_BSA.Series.Add(series1);
-            chartFunction_BSA.Size = new Size(573, 369);
+            chartFunction_BSA.Size = new Size(547, 369);
             chartFunction_BSA.TabIndex = 2;
             chartFunction_BSA.Click += chartFunction_BSA_Click;
             // 
@@ -195,23 +195,9 @@
             dataGridList_BSA.Name = "dataGridList_BSA";
             dataGridList_BSA.RowHeadersVisible = false;
             dataGridList_BSA.RowHeadersWidth = 62;
-            dataGridList_BSA.Size = new Size(156, 369);
+            dataGridList_BSA.Size = new Size(158, 369);
             dataGridList_BSA.TabIndex = 1;
             dataGridList_BSA.CellContentClick += dataGridList_BSA_CellContentClick;
-            // 
-            // Column1
-            // 
-            Column1.HeaderText = "X";
-            Column1.MinimumWidth = 8;
-            Column1.Name = "Column1";
-            Column1.Width = 50;
-            // 
-            // Column2
-            // 
-            Column2.HeaderText = "F(X)";
-            Column2.MinimumWidth = 8;
-            Column2.Name = "Column2";
-            Column2.Width = 50;
             // 
             // label5
             // 
@@ -221,6 +207,20 @@
             label5.Size = new Size(93, 25);
             label5.TabIndex = 0;
             label5.Text = "Результат:";
+            // 
+            // Column1
+            // 
+            Column1.HeaderText = "X";
+            Column1.MinimumWidth = 8;
+            Column1.Name = "Column1";
+            Column1.Width = 80;
+            // 
+            // Column2
+            // 
+            Column2.HeaderText = "F(X)";
+            Column2.MinimumWidth = 8;
+            Column2.Name = "Column2";
+            Column2.Width = 80;
             // 
             // FormMain
             // 
@@ -259,9 +259,9 @@
         private Button buttonDone_BSA;
         private GroupBox groupBoxConclusion_BSA;
         private DataGridView dataGridList_BSA;
-        private DataGridViewTextBoxColumn Column1;
-        private DataGridViewTextBoxColumn Column2;
         private Label label5;
         private System.Windows.Forms.DataVisualization.Charting.Chart chartFunction_BSA;
+        private DataGridViewTextBoxColumn Column1;
+        private DataGridViewTextBoxColumn Column2;
     }
 }

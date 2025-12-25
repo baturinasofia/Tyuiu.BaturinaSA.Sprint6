@@ -19,7 +19,7 @@ namespace Tyuiu.BaturinaSA.Sprint6.Task2.V7.Lib
                 }
                 else
                 {
-                    y = Math.Round((Math.Cos(x) / (x + 1)) - (Math.Cos(x) * 1.3) + 3 * x, 2);
+                    y = Math.Round(3 * x + 2 - ((2 * x - x) / (Math.Cos(x) + 1)), 2);
                 }
 
                 valueArray[count] = y;
