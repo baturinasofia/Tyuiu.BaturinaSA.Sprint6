@@ -13,11 +13,7 @@ namespace Tyuiu.BaturinaSA.Sprint6.Task2.V7.Lib
 
             for (int x = startValue; x <= stopValue; x++)
             {
-                if (x + 1 == 0)
-                {
-                    y = 0; 
-                }
-                else
+
                 {
                     y = Math.Round(3 * x + 2 - ((2 * x - x) / (Math.Cos(x) + 1)), 2);
                 }
